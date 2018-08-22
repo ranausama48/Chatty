@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/signin.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="card form-custom">
+        <div class="card-body">
+            <form id="authForm" class="form-signin" novalidate>
+                <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 id="authTitle" class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                <div id="authAlert" class="alert" role="alert"></div>
+                <input type="text" id="firstName" class="form-control d-none" placeholder="First Name" autocomplete="off" required>
+                <input type="text" id="lastName" class="form-control d-none" placeholder="Last Name" autocomplete="off" required>
+                <label for="username" class="sr-only">Username</label>
+                <input type="text" id="username" class="form-control" placeholder="Username" autocomplete="off" required autofocus>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Password" autocomplete="new-password" required>
+                <input type="password" id="confirmPassword" class="form-control d-none" placeholder="Confirm Password" autocomplete="new-password" required>
+                <div class="checkbox mb-3">
+                <label id="rememberMe">
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+                <br>
+                <p id="showSignUpBtn" class="text-primary cursor">Or click here to sign up!</a>
+                <p id="showSignInBtn" class="text-primary d-none cursor">Or click here to sign in!</a>
+                </div>
+                <button id="submitBtn" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/auth.js"></script>
+  </body>
+</html>
